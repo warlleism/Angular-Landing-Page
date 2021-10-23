@@ -1,0 +1,35 @@
+<div class="content">
+    <div class="c1">
+        <img src="" alt="">
+    </div>
+    <div class="c2">
+        <h1>
+            Get´s started.
+        </h1>
+        <h4>Already have on account? <a style="color: red; text-decoration: none; font-weight: 600;" href="">log
+                in</a>
+        </h4>
+
+        <section class="login">
+            <button class="button"><a href="#"><img class="icon" src="/assets/img/icon.png"> Sing up with
+                    Google</a></button>
+            <button class="button btn2" style="margin-left: 20px;"><a style="color: white;" href="#">Sing up with
+                    Facebook</a></button>
+        </section>
+
+        <section class="registration">
+            <div class="content-input">
+                <label for="staticEmail" class="email col-form-label">Email address</label>
+                <input type="text" class="form-control" id="staticEmail" value="email@example.com"
+                    [(ngModel)]="user.email" name="email">
+            </div>
+            
+            <div class="content-input">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <input type="password" class="form-control" id="inputPassword" [(ngModel)]="user.senha" name="senha">
+                <button class="button btn3" (click)="createUser()">Register</button>
+            </div>
+    
+        </section>
+    </div>
+</div>
